@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masumbuko Alulea - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQZ7FPT07Y"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HQZ7FPT07Y');
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header" class="logo-link" aria-label="Go to Home">
+                    <img src="images/logo.jpg" alt="Site Logo" class="logo">
+                </a>
+                <ul id="sidemenu" class="nav-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" aria-label="Close Menu" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" aria-label="Open Menu" onclick="openmenu()"></i>
+            </nav>
+    
+            <div class="header-text">
+                <p>Hello there,</p>
+                <h1>
+                    I'm <span class="name-highlight">Masumbuko Alulea</span>
+                </h1>
+                <div class="typewriter">
+                    <p>Eager to secure a <span>software engineering internship</span> where I can apply my technical skills.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="courses">
+    <div class="container">
+        <h1 class="sub-title">Courses</h1>
+        <ul class="courses-list">
+            <li class="course" onclick="toggleDescription('desc1')">Data Structures with Algorithms</li>
+            <p id="desc1" class="course-desc">Learn about different data structures and their algorithms, including arrays, linked lists, stacks, and queues.</p>
+
+            <li class="course" onclick="toggleDescription('desc2')">Discrete Mathematics</li>
+            <p id="desc2" class="course-desc">Focuses on mathematical reasoning, graph theory, combinatorics, and logic used in computer science.</p>
+
+            <li class="course" onclick="toggleDescription('desc3')">Object-Oriented Programming</li>
+            <p id="desc3" class="course-desc">Covers the principles of OOP, including classes, objects, inheritance, polymorphism, and encapsulation.</p>
+
+            <li class="course" onclick="toggleDescription('desc4')">Foundations of Software Engineering</li>
+            <p id="desc4" class="course-desc">Introduces software development lifecycle, requirements gathering, and design patterns.</p>
+
+            <li class="course" onclick="toggleDescription('desc5')">Programming Language</li>
+            <p id="desc5" class="course-desc">Explores the design and implementation of programming languages and their paradigms.</p>
+
+            <li class="course" onclick="toggleDescription('desc6')">Software Project Management</li>
+            <p id="desc6" class="course-desc">Teaches project management skills, agile methodologies, and risk management in software development.</p>
+
+            <li class="course" onclick="toggleDescription('desc7')">Assembly Language</li>
+            <p id="desc7" class="course-desc">Introduction to low-level programming with assembly language and hardware interfacing concepts.</p>
+
+            <li class="course" onclick="toggleDescription('desc8')">Technical Writing</li>
+            <p id="desc8" class="course-desc">Develops technical communication skills for writing documentation, reports, and project proposals.</p>
+
+            <li class="course" onclick="toggleDescription('desc9')">Digital Logic</li>
+            <p id="desc9" class="course-desc">Covers Boolean algebra, logic gates, and the design of digital circuits.</p>
+        </ul>
+    </div>
+</div>
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/background-photo.png" alt= "Masumbuko Alulea">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated Computer Science junior at South Dakota State University with a strong foundation in programming languages like Python, C++, and C. As I continue my studies, I am passionate about developing scalable applications and optimizing system performance. I am eager to apply my knowledge in real-world scenarios and embrace new challenges to further my growth in the field of software engineering.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <!-- Skills Section -->
+               <!-- Skills Section -->
+                    <!-- Skills Section -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, C, C++</li>
+                        <li><span>Web Technologies</span><br>HTML and CSS</li>
+                        <li><span>Software Design Patterns</span><br>Knowledgeable in common design patterns for software development</li>
+                        <li><span>Agile Methodologies</span><br>Experienced with Agile frameworks for software development</li>
+                        <li><span>Software Testing Concepts</span><br>Understanding of various software testing practices</li>
+                        <li><span>SQL</span><br>Proficient in SQL for database management</li>
+                        <li><span>Version Control</span><br>Skilled with Git & GitHub for version control and collaboration</li>
+                        <li><span>Microsoft Office</span><br>Proficient with Word, Excel, PowerPoint, etc.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Present</span><br>Frame Maker at Masterbrand, Sioux Falls, SD</li>
+                        <li><span>2023 - 2023</span><br>Seasonal Package Handler at FedEx, Sioux Falls, SD</li>
+                        <li><span>2021 - 2021</span><br>Inventory Stocker at Walmart, Sioux Falls, SD</li>
+                    </ul>
+                </div>
+
+                
+
+                <!-- Education Section -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> Expected Graduation: May/2026 </span><br>Bachelor of Science in Computer Science - South Dakota State University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I develop responsive websites with a focus on performance, design, and usability.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Software Development</h2>
+                <p>I build basic applications using Python and other technologies to solve complex problems.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-git-alt"></i>
+                <h2>Version Control & Collaboration</h2>
+                <p>I manage codebases using Git, ensuring smooth collaboration and version control for projects.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/logo.jpg" alt="Portfolio Website">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>Designed a portfolio showcasing projects, skills, and expertise, with interactive UI elements and dynamic lead generation features.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/file-organizer.webp" alt="File Organizer">
+                <div class="layer">
+                    <h3>File Organizer</h3>
+                    <p>Developed a basic file organization tool with custom categories and a user-friendly GUI using Python and Tkinter.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/resume-parser.png" alt="Resume Parsing Script">
+                <div class="layer">
+                    <h3>Resume Parsing Script</h3>
+                    <p>Created a resume parsing tool using Python to automatically extract key details such as skills, education, and experience, streamlining candidate review processes.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+    
+</div>
+<!-- ----------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>Makingaberto3@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>Sioux Falls, SD</p>
+                <div class="social-icons">
+                    <a href="https://github.com/aluleam" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mk-alulea/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <a href="images/Masumbuko Alulea Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Masumbuko Alulea. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+
+    const scriptURL = '<add your own link here>';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+
+    function toggleDescription(id) {
+        var description = document.getElementById(id);
+
+        if (description.classList.contains('active')) {
+            description.classList.remove('active');
+        } else {
+
+            var allDescriptions = document.querySelectorAll('.course-desc');
+            allDescriptions.forEach(function (desc) {
+                desc.classList.remove('active');
+            });
+
+            description.classList.add('active');
+        }
+    }
+</script>
+
+</body>
+</html>
