@@ -474,5 +474,36 @@ nav .fas{
     display: block;
 }
 
+#content {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; 
+}
 
+#content.show {
+    opacity: 1;
+}
 
+.loader {
+    width: 80px;
+    height: 80px;
+    border: 8px solid #ff004f;
+    border-radius: 50%; 
+    animation: flash 2s ease-in-out 2;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes flash {
+    0%, 100% {
+        transform: scale(0.5); 
+        opacity: 0.5;          
+    }
+    50% {
+        transform: scale(1.5); 
+        opacity: 1;           
+    }
+}
